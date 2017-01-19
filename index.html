@@ -2,7 +2,9 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Kate Wu | Online Portfolio</title>
+	
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kate Wu | Online Portfolio</title> 
 	<link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/normalize.css">
@@ -10,302 +12,359 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.0/css/hover-min.css">
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700" rel="stylesheet">
+  <!-- font-family: 'Open Sans Condensed', sans-serif; -->
 </head>
 <body>
 <header>
-  <nav>
-    <ul>
-      <li><a href="#home" class="active">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#project">Project</a></li>
-      <li><a href="#resume">Resume</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
+<nav>
+  <a href="#" class="hamburger">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+  </a>
+  <ul class="clearfix menu">
+    <li><a href="#home" class="active">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#project">Project</a></li>
+    <li><a href="#resume">Resume</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
 </header>
 <section id="home">
-  <div class="section-inner title">
-    <article>
-      <h1 class="myName">Kate Wu</h1>
-    </article>
-    <article>
-      <span class="small_title">UX/UI designer & developer</span>
-    </article>
-    
-  </div>
+ <div class="section-inner title ">
+  <h2 class="myName">Kate Wu</h2>
+  <span class="small_title">UX/UI designer & developer</span>
+  <div class="modal_wrapper"><!-- contact me buttom effect-->
+    <div class="modal">
+      <h3>Hi, I'm kate</h3>
+      <img class="MyImage" src="images/MyImage.jpg" alt="Profile Image">
+      <p>This is my personal portfolio website. I'm currently seeking for job openings in web design field, please review my portfolio and resume. Shall you have any questions, please feel free to contact me. I'm appreciated your considering, thanks for your time and visit.</p>
+      <a href="https://www.linkedin.com/in/kate-wu-9620ba76?trk=hp-identity-name" class="linkedIn" target="_blank"><i id="icon_linkedin" class="fa fa-linkedin-square faa-ring animated" aria-hidden="true"></i></a>
+      <a href="mailto:yurou.wu@gmail.com" class="email" target="_top"><i id="icon_email" class="fa fa-envelope faa-ring animated" aria-hidden="true"></i></a>
+      <i id="icon_x" class="close-modal fa fa-times-circle-o" aria-hidden="true"></i>
+      </div> <!--end  modal -->
+      <div class="overlay-background"></div>
+      <button type="button" id="trigger" class="trigger">Contact me</button>
+    </div> <!-- end modal-wrapper  -->  
+  </div>  <!-- end section-inner title -->
 </section>
 <section id="about">
   <div class="section-inner about_page">
-    <h1 class="about_h1">about</h1>
-
-    <blockquote>
-    <span class="quote">&ldquo;</span>I never dreamed of <br>success<br>
-    I worked<br>for it&ldquo;
-    </blockquote>
-    <div class="col2">
-      <p class="col_First">My name is Kate and I am a UI/UX designer, developer, photographer. I'm pursuing my master degree in web design at Academy of Art University.</p>
-      <p class="col_second">I have a deep love and passion on graphic design and web design.With over 1 years of experience at school, I continuously learn everyday especially in the development field.</p>
-      <p class="col_third">As a designer, I have worked on a range of different projects from identity and branding, print material to web design. I error on the side of minimalism and apply the "less is more" mentality when and where I can</p>
-    </div>
-  </div>
+    <div class="about_wrapper">
+      <h1 class="about_h1">about</h1>
+      <blockquote>
+        <span class="quote">&ldquo;</span>I never dreamed of <br>success<br>I worked<br>for it&ldquo;
+      </blockquote>
+      <div class="col2">
+        <p class="col_First">My name is Kate and I am a UI/UX designer, developer, photographer. I'm pursuing my master degree in web design at Academy of Art University.</p>
+        <p class="col_second">I have a deep love and passion on graphic design and web design.With over 1 years of experience at school, I continuously learn everyday especially in the development field.</p>
+        <p class="col_third">As a designer, I have worked on a range of different projects from identity and branding, print material to web design. I error on the side of minimalism and apply the "less is more" mentality when and where I can</p>
+      </div><!-- end col2 -->
+    </div> <!-- end about_wrapper -->
+  </div> <!-- end section-inner about_page -->
 </section>
-
 <section id="project">
   <div class="section-inner">
     <h1>Project</h1>
     <div id="panel_container">
       <div class="panel_nav">
         <div class="panel_ul">
-          <li class="tab_active"><a href="#" class="panel_a" data-panel="ux">UX/UI</a></li>
-          <li><a href="#" class="panel_a" data-panel="web">Web Design</a></li>
-        </div>
-      </div>
-
-      <div id="tab_content">
-        <article id="ux" class="panel">
-          <!-- image effect goes here -->
-          <div class="section_wrapper">
-            <div class="div_container">  
-              <div class="content">
-                <a href="https://www.facebook.com/">
-                  <img class="content-image" src="images/ux1.jpg">
-                  <div class="content-overlay"></div>
-                  <div class="content-details fadeIn-bottom">
-                    <h3 class="content-title">This is a title</h3>
-                    <p class="content-text">This is a short description</p>
-                  </div>
-                </a>
+          <ul>
+            <li> 
+              <a href="#tab_2" class="panel_a tab"  data-filter=".web">web</a>
+            </li>
+            <li>
+              <a href="#tab_3" class="panel_a tab" data-filter=".art">art</a>
+            </li> 
+            <li>
+              <a href="#tab_1" class="panel_a tab tab_active" data-filter=".showAll">all</a>
+            </li> 
+          </ul>        
+       </div> <!-- end panel_ul -->
+      </div> <!-- end panel_nav -->
+      <div class="WrapperForSection"> <!-- wrapper for section_wrapper -->
+      <div class="section_wrapper" ><!-- image effect goes here -->
+        <div class="div_container web showAll"><!---web begin-->
+          <div class="content">
+            <a href="http://katewudesign.com/work.html" target="_top">
+              <img class="content-image" src="images/web1.jpg" alt="Taipei Image">
+              <div class="content-overlay"></div>
+              <div class="content-details fadeIn-bottom">
+                <h3 class="content-title">Rich cultural heritage and buzzing nightlift</h3>
               </div>
-            </div>
-
-            <div class="div_container">  
-              <div class="content">
-                <a href="https://www.facebook.com/">
-                  <img class="content-image" src="images/ux1.jpg">
-                  <div class="content-overlay"></div>
-                  <div class="content-details fadeIn-bottom">
-                    <h3 class="content-title">This is a title</h3>
-                    <p class="content-text">This is a short description</p>
-                  </div>
-                </a>
+            </a>
+          </div><!-- end content -->
+        </div> <!--  end div_container -->
+        <div class="div_container web showAll">  
+          <div class="content">
+            <a href="http://katewudesign.com/aau/wnm601/module11/#tab-2" target="_top">
+              <img class="content-image" src="images/web2.jpg" alt="Menu Tabs design">
+              <div class="content-overlay"></div>
+              <div class="content-details fadeIn-bottom">
+                <h3 class="content-title">Menu Tabs design</h3>
+                <!-- <p class="content-text">This is a short description</p> -->
               </div>
-            </div>
-
-            <div class="div_container">  
-              <div class="content">
-                <a href="https://www.facebook.com/">
-                  <img class="content-image" src="images/ux1.jpg">
-                  <div class="content-overlay"></div>
-                  <div class="content-details fadeIn-bottom">
-                    <h3 class="content-title">This is a title</h3>
-                    <p class="content-text">This is a short description</p>
-                  </div>
-                </a>
+            </a>
+          </div> <!-- end content -->
+        </div> <!--  end div_container -->
+        <div class="div_container web showAll">  
+          <div class="content">
+            <a href="http://katewudesign.com/aau/wnm601/module16/" target="_blank">
+              <img class="content-image" src="images/web3.jpg" alt="Form design">
+              <div class="content-overlay"></div>
+              <div class="content-details fadeIn-bottom">
+                <h3 class="content-title">Form design</h3>
+                <!-- <p class="content-text">This is a short description</p> -->
               </div>
-            </div>
-
-            <div class="div_container">  
-              <div class="content">
-                <a href="https://www.facebook.com/">
-                  <img class="content-image" src="images/ux1.jpg">
-                  <div class="content-overlay"></div>
-                  <div class="content-details fadeIn-bottom">
-                    <h3 class="content-title">This is a title</h3>
-                    <p class="content-text">This is a short description</p>
-                  </div>
-                </a>
+            </a>
+          </div> <!-- end content -->
+        </div> <!--  end div_container -->
+        <div class="div_container web showAll">  
+          <div class="content">
+            <a href="http://katewudesign.com/aau/wnm601/module15/" target="_blank">
+              <img class="content-image" src="images/web4.jpg" alt="Rock Paper Scissors Game">
+              <div class="content-overlay"></div>
+              <div class="content-details fadeIn-bottom">
+                <h3 class="content-title">Rock Paper Scissors Game</h3>
+                <!-- <p class="content-text">This is a short description</p> -->
               </div>
-            </div>
-
-            <div class="div_container">  
-              <div class="content">
-                <a href="https://www.facebook.com/">
-                  <img class="content-image" src="images/ux1.jpg">
-                  <div class="content-overlay"></div>
-                  <div class="content-details fadeIn-bottom">
-                    <h3 class="content-title">This is a title</h3>
-                    <p class="content-text">This is a short description</p>
-                  </div>
-                </a>
+            </a>
+          </div> <!-- end content -->
+        </div> <!--  end div_container -->
+        <div class="div_container web showAll">  
+          <div class="content">
+            <a href="http://katewudesign.com/aau/wnm601/module12/" target="_blank">
+              <img class="content-image" src="images/web5.jpg" alt="Raohe Night Market">
+              <div class="content-overlay"></div>
+              <div class="content-details fadeIn-bottom">
+                <h3 class="content-title">Raohe Night Market</h3>
+                <!-- <p class="content-text">This is a short description</p> -->
               </div>
-            </div>
-            <div class="div_container">  
-              <div class="content">
-                <a href="https://www.facebook.com/">
-                  <img class="content-image" src="images/ux1.jpg">
-                  <div class="content-overlay"></div>
-                  <div class="content-details fadeIn-bottom">
-                    <h3 class="content-title">This is a title</h3>
-                    <p class="content-text">This is a short description</p>
-                  </div>
-                </a>
+            </a>
+          </div> <!-- end content -->
+        </div> <!--  end div_container -->
+        <div class="div_container web showAll">  
+          <div class="content">
+            <a href="http://katewudesign.com/aau/wnm601/module14/" target="_blank">
+              <img class="content-image" src="images/web6.jpg" alt="Tea Press Milk Tea store">
+              <div class="content-overlay"></div>
+              <div class="content-details fadeIn-bottom">
+                <h3 class="content-title">Tea Press Milk Tea store</h3>
+               <!--  <p class="content-text">This is a short description</p> -->
               </div>
-            </div>
-            </div>
-          <!-- End image effect -->
-
-        </article>
-
-        <article id="web" class="panel">
-          <!-- image effect goes here-->
-          <div class="section_wrapper">
-            <div class="div_container">  
-              <div class="content">
-                <a href="https://www.facebook.com/">
-                  <img class="content-image" src="images/ux1.jpg">
-                  <div class="content-overlay"></div>
-                  <div class="content-details fadeIn-bottom">
-                    <h3 class="content-title">This is a title</h3>
-                    <p class="content-text">This is a short description</p>
-                  </div>
-                </a>
+            </a>
+          </div> <!-- end content -->
+        </div> <!--  end div_container -->
+        <!-- end web tab-->
+        <div class="div_container showAll art ">  
+          <div class="content">
+            <a href="#">
+              <img class="content-image" src="images/art1.jpg" alt="Geometric oil painting">
+              <div class="content-overlay"></div>
+              <div class="content-details fadeIn-bottom">
+                <h3 class="content-title">Geometric oil painting</h3>
+                <!-- <p class="content-text">This is a short description UX</p> -->
               </div>
-            </div>
-
-            <div class="div_container">  
-              <div class="content">
-                <a href="https://www.facebook.com/">
-                  <img class="content-image" src="images/ux1.jpg">
-                  <div class="content-overlay"></div>
-                  <div class="content-details fadeIn-bottom">
-                    <h3 class="content-title">This is a title</h3>
-                    <p class="content-text">This is a short description</p>
-                  </div>
-                </a>
+            </a>
+          </div> <!-- end content -->
+        </div> <!--  end div_container  -->
+        <div class="div_container showAll art">  
+          <div class="content">
+            <a href="#">
+              <img class="content-image" src="images/art2.jpg" alt="Yellow lily oil painting">
+              <div class="content-overlay"></div>
+              <div class="content-details fadeIn-bottom">
+                <h3 class="content-title">Yellow lily oil painting</h3>
+                <!-- <p class="content-text">This is a short description</p> -->
               </div>
-            </div>
-
-            <div class="div_container">  
-              <div class="content">
-                <a href="https://www.facebook.com/">
-                  <img class="content-image" src="images/ux1.jpg">
-                  <div class="content-overlay"></div>
-                  <div class="content-details fadeIn-bottom">
-                    <h3 class="content-title">This is a title</h3>
-                    <p class="content-text">This is a short description</p>
-                  </div>
-                </a>
+            </a>
+          </div> <!-- end content -->
+        </div> <!--  end div_container  -->
+        <div class="div_container showAll art">  
+          <div class="content">
+            <a href="#">
+              <img class="content-image" src="images/art3.jpg" alt="bush oil painting">
+              <div class="content-overlay"></div>
+              <div class="content-details fadeIn-bottom">
+                <h3 class="content-title">bush oil painting</h3>
+                <!-- <p class="content-text">This is a short description UX</p> -->
               </div>
-            </div>
-
-            <div class="div_container">  
-              <div class="content">
-                <a href="https://www.facebook.com/">
-                  <img class="content-image" src="images/ux1.jpg">
-                  <div class="content-overlay"></div>
-                  <div class="content-details fadeIn-bottom">
-                    <h3 class="content-title">This is a title</h3>
-                    <p class="content-text">This is a short description</p>
-                  </div>
-                </a>
+            </a>
+          </div> <!-- end content -->
+        </div> <!--  end div_container  -->
+        <div class="div_container showAll art">  
+          <div class="content">
+            <a href="#">
+              <img class="content-image" src="images/art4.jpg" alt="Linjiang Street Night Market">
+              <div class="content-overlay"></div>
+              <div class="content-details fadeIn-bottom">
+                <h3 class="content-title">Linjiang Street Night Market</h3>
+                <!-- <p class="content-text">This is a short description</p> -->
               </div>
-            </div>
-
-            <div class="div_container">  
-              <div class="content">
-                <a href="https://www.facebook.com/">
-                  <img class="content-image" src="images/ux1.jpg">
-                  <div class="content-overlay"></div>
-                  <div class="content-details fadeIn-bottom">
-                    <h3 class="content-title">This is a title</h3>
-                    <p class="content-text">This is a short description</p>
-                  </div>
-                </a>
+            </a>
+          </div> <!-- end content -->
+        </div> <!--  end div_container  -->
+        <div class="div_container showAll art">  
+          <div class="content">
+            <a href="#">
+              <img class="content-image" src="images/art5.jpg" alt="chaos">
+              <div class="content-overlay"></div>
+              <div class="content-details fadeIn-bottom">
+                <h3 class="content-title">chaos</h3>
+              <!--   <p class="content-text">This is a short description</p> -->
               </div>
-            </div>
-            <div class="div_container">  
-              <div class="content">
-                <a href="https://www.facebook.com/">
-                  <img class="content-image" src="images/ux1.jpg">
-                  <div class="content-overlay"></div>
-                  <div class="content-details fadeIn-bottom">
-                    <h3 class="content-title">This is a title</h3>
-                    <p class="content-text">This is a short description</p>
-                  </div>
-                </a>
+            </a>
+          </div> <!-- end content -->
+        </div> <!--  end div_container  -->
+        <div class="div_container showAll art">  
+          <div class="content">
+            <a href="#">
+              <img class="content-image" src="images/sketch1.jpg" alt="sketch">
+              <div class="content-overlay"></div>
+              <div class="content-details fadeIn-bottom">
+                <h3 class="content-title">sketch</h3>
+                <!-- <p class="content-text">This is a short description</p> -->
               </div>
-            </div>
-            </div>
-
-          <!-- End image effect -->
-        </article>
-      </div><!--  End tab_content -->
-    </div> <!-- End panel_container -->
+            </a>
+          </div> <!-- end content -->
+        </div> <!--  end div_container  -->
+        <div class="div_container showAll art">  
+          <div class="content">
+            <a href="#">
+              <img class="content-image" src="images/sketch2.jpg" alt="sketch">
+              <div class="content-overlay"></div>
+              <div class="content-details fadeIn-bottom">
+                <h3 class="content-title">sketch</h3>
+                <!-- <p class="content-text">This is a short description</p> -->
+              </div>
+            </a>
+          </div> <!-- end content -->
+        </div> <!--  end div_container  -->
+        <div class="div_container showAll art">  
+          <div class="content">
+            <a href="#">
+              <img class="content-image" src="images/sketch3.jpg" alt="sketch">
+              <div class="content-overlay"></div>
+              <div class="content-details fadeIn-bottom">
+                <h3 class="content-title">sketch</h3>
+              <!--    <p class="content-text">This is a short description</p> -->
+              </div>
+            </a>
+          </div>  <!-- end content -->
+        </div> <!--  end div_container  -->
+        <div class="div_container showAll art">  
+          <div class="content">
+            <a href="#">
+              <img class="content-image" src="images/sketch6.jpg" alt="sketch">
+              <div class="content-overlay"></div>
+              <div class="content-details fadeIn-bottom">
+                <h3 class="content-title">sketch</h3>
+               <!--  <p class="content-text">This is a short description</p> -->
+              </div>
+            </a>
+          </div>
+        </div> <!--  end div_container  -->
+      </div> <!--End section_wrapper -->
+      </div>  <!-- wrapper for section wrapper  -->
+    </div> <!-- End panel_container  -->
   </div>  <!-- End section-inner -->
 </section>
-
 <section id="resume">
-  <div class="section-inner">
-  <h1>Resume</h1>
-  <!-- resume goes here -->
-   <div class="resume_wrapper">
+  <div class="section-inner">`
+    <h1>Resume</h1>
+    <div class="resume_wrapper">
      <article class="resume_flex green">
-       <div>
-         <h3 class="resume_title">Skill</h3>
-         <hr>
-         <p>
-          <strong>Technical Proficiency:</strong><br />Adobe Creative Suite: Photoshop, Illustrator, InDesign, Dreamweaver, After Effect. Sketch, invision.
-       
-          Design Expertise: <br />Prototyping, Wireframes, Personas, Scenarios, Usability Testing
-       
-          Language: HTML5, CSS3, Bootstrap, Javascript / JQuery,  Java
-         </p>
-       </div>
+      <h3 class="resume_title">Skill</h3>
+      <hr/>
+      <p>
+      <strong class="emphasis">Technical Proficiency :</strong><br />Adobe Creative Suite: Photoshop, Illustrator, InDesign, Dreamweaver, After Effect.<br />
+      <strong class="emphasis">Design Expertise :</strong><br />Prototyping, Wireframes, Personas, Scenarios, Usability Testing<br />
+      <strong class="emphasis">Language :</strong><br /> HTML5, CSS3, Bootstrap, Javascript, JQuery,  Java
+      </p>
      </article>
       <article class="resume_flex orange">
-        <div>
-         <h3 class="resume_title">Education</h3>
-         <hr>
-         <h4><strong>Master of Arts</strong> Web Design & New Media </h4>
-           <p>Academy of Art, current student</p>
-         <p>UC Berkeley Extension: <br>Grapic Design certificate</p>
-         <p>General Assembly: <br> Front End Web Development certificate</p>
-             </div>
+       <h3 class="resume_title">Education</h3>
+       <hr>
+       <p id="master"><strong>Master of Arts</strong><span>  Web Design and New Media</span></p>
+       <p id="school">Academy of Art University, current student</p>
+       <p><em>General Assembly : Front End Web Development certificate</em></p>
       </article>
-
       <article class="resume_flex yellow">
-        <div>
-         <h3 class="resume_title">Languages</h3>
-         <hr>
-         <p>Mandarin, Taiwanese, Cantonese and English
-        </div>
+       <h3 class="resume_title">Languages</h3>
+       <hr>
+       <p class="p_margin">Mandarin, Taiwanese, Cantonese and English
       </article>
-
-     <article class="resume_flex blue">
-       <div>
-         <h3 class="resume_title">EXPERIENCE</h3>
-         <hr>
-         <p> Freelance web designer </p>
-       </div>
-    </article>
-  </div> <!-- end resume_wrapper -->
-  <!-- End resume  -->
-  </div>
+      <article class="resume_flex blue">
+       <h3 class="resume_title">EXPERIENCE</h3>
+       <hr>
+       <p class="p_margin"> Freelance Web  / Graphic designer </p>
+      </article>
+    </div> <!-- end resume_wrapper -->
+  </div><!-- End section-inner  -->
 </section>
 <hr>
 <section id="contact">
-  <div class="section-inner">
+  <div class="section-inner contact_form">
   <h1>contact</h1>
-  <p></p>
-  </div>
+  <form>
+    <h5 class="contact_title">Get In Touch</h5>
+    <p class="contact_paragraph">Should you have any questions, please do not hesitate to contact me :</p>
+    <div class="contentform">     
+      <div class="leftcontact">
+        <div class="form-group">
+          <p class="p_name">Name<span>*</span></p>
+          <span class="icon-case"><i class="fa fa-user-o" aria-hidden="true"></i></span>
+          <input type="text" name="nom" id="nom"/>
+          <div class="validation"></div>
+        </div> 
+        <div class="form-group">
+          <p class="p_name">Phone number <span>*</span></p>  
+          <span class="icon-case"><i class="fa fa-phone"></i></span>
+          <input type="text" name="phone" id="phone" />
+          <div class="validation"></div>
+        </div>
+        <div class="form-group">
+          <p class="p_name">E-mail <span>*</span></p>  
+          <span class="icon-case"><i class="fa fa-envelope-o"></i></span>
+          <input type="email" name="email" id="email"/>
+          <div class="validation"></div>
+        </div> 
+        <div class="form-group">
+          <p class="p_name">Address <span>*</span></p>
+          <span class="icon-case"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+          <input type="text" name="ville" id="ville" />
+          <div class="validation"></div>
+        </div>  
+      </div> <!--  end left contact -->
+      <div class="rightcontact">  
+        <div class="form-group">
+          <p class="p_name">Message <span>*</span></p>
+          <span class="icon-case"><i class="fa fa-comment-o" aria-hidden="true"></i></span>
+          <textarea name="message" rows="14" data-rule="required"></textarea>
+          <div class="validation"></div>
+        </div>  
+      </div>  <!-- end right contact -->
+    </div> <!-- end contentform -->
+    <button type="submit" class="bouton-contact">Send</button>
+   </form> <!-- end form here -->
+  </div><!--   end section-inner -->
 </section>
+<footer>
+  <div class="social-links">
+    <a href="mailto:yurou.wu@gmail.com" target="_top"><i class="fa fa-envelope faa-ring animated" aria-hidden="true"></i></a>
+    <a href="https://www.facebook.com/kate.wu.900" class="face"><i class="fa fa-facebook-square faa-ring animated" aria-hidden="true"></i></a>
+    <!-- <a href="https://www.facebook.com/kate.wu.900" class="twit"><i class="fa fa-twitter-square faa-ring animated" aria-hidden="true"></i></a> -->
+    <!-- <a href="https://www.instagram.com/ykja14151620/" class="Ig"><i class="fa fa-instagram faa-ring animated" aria-hidden="true"></i></a> -->
+    <a href="https://www.linkedin.com/in/kate-wu-9620ba76?trk=hp-identity-name" class="linkedIn"><i class="fa fa-linkedin-square faa-ring animated" aria-hidden="true"></i></a>
+  </div>
+  <p>&copy;<a href="#"> Kate Wu - web design Portfolio 2017 </a></p>   
+</footer>
 
-    <footer>
-    
-      <div class="social-links">
-        <a href="#" class="face"><i class="fa fa-facebook-square faa-ring animated" aria-hidden="true"></i></a>
-        <a href="#" class="twit"><i class="fa fa-twitter-square faa-ring animated" aria-hidden="true"></i></a>
-        <a href="#" class="Ig"><i class="fa fa-instagram faa-ring animated" aria-hidden="true"></i></a>
-      </div>
-      <p>&copy;<a href="#"> kate wu </a></p>
-  
-      
-  </footer>
-
-
-
-	<script src="js/jquery-3.1.1.min.js"></script>
-	<script src="js/main.js"></script>
-
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+<script src="https://unpkg.com/scrollreveal@3.3.2/dist/scrollreveal.min.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
